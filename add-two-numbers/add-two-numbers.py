@@ -25,8 +25,3 @@ class Solution:
         itr = l3
         
         #append nodes(reversed values) in linked list
-        for i in range(-2, -len(l3_sum) - 1, -1):
-            itr.next = ListNode(int(l3_sum[i]))
-            itr = itr.next
-        #return llist head
-        return l3
