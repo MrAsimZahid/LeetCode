@@ -1,15 +1,24 @@
 #https://github.com/MrAsimZahid/LeetCode
 #https://leetcode.com/problems/boats-to-save-people/
+​
+#Now lets speed optimize by reducing vaiabl names 
+#
 class Solution:
     def numRescueBoats(self, people: List[int], limit: int) -> int:
+        """
+        l: left
+        r: right
+        v: visits
+        For better readablity visit last commit
+        """
         people.sort()
-        left = visit = 0
-        right = len(people) -1
-        while right > left:
-            if people[left] + people[right] <= limit:
-                left += 1
-            right -= 1
-            visit += 1
-        if left == right:
-            visit += 1
-        return visit
+        l = v = 0
+        r = len(people) -1
+        while r > l:
+            if people[l] + people[r] <= limit:
+                l += 1
+            r -= 1
+            v += 1
+        if l == r:
+            v += 1
+        return v
