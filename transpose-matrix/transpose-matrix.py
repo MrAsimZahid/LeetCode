@@ -1,6 +1,8 @@
-#https://leetcode.com/problems/transpose-matrix/
-#https://github.com/MrAsimZahid
-import numpy
 class Solution:
-    def transpose(self, A: List[List[int]]) -> List[List[int]]:
-        return numpy.transpose(A)
+    def transpose(self, matrix: List[List[int]]) -> List[List[int]]:
+        """
+        Transpose matrix: another methos numpy.transpose(matrix)
+        rotate 90 degree by [*zip(*matrix)][::-1]        
+        """
+        return [*zip(*matrix)]
+        
