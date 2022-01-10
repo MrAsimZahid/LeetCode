@@ -8,6 +8,8 @@
 #         self.right = right
 class Solution:
     def invertTree(self, root):
-        if root:
+        if root == None:
+            return root
+        else:
             root.left, root.right = self.invertTree(root.right), self.invertTree(root.left)
             return root
