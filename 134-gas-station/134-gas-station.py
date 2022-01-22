@@ -16,26 +16,3 @@ class Solution:
             
         return start_index
         
-        
-        
-#         len_gas = len(gas)
-#         gas = gas + gas
-#         cost = cost + cost
-#         tank = 0
-#         for index in range(len_gas): 
-#             tank = 0
-#             for i in range(index, index+len_gas):
-#                 tank += gas[i]
-#                 fule_burn = cost[i]
-#                 tank = tank - fule_burn -> 1
-#                 if tank < 0:
-#                     if index is (index+len_gas):
-#                         flag = True
-#                     else:
-#                         flag = False
-#                         break
-#                 if index is (index+len_gas):
-#                     flag = True
-#             if flag:
-#                 return index
-#         return -1
