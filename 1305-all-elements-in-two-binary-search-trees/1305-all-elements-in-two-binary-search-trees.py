@@ -6,10 +6,7 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
-class Solution:
-#     def __init__(self, ans=[]):
-#         self.ans = ans
-        
+class Solution:        
     def getAllElements(self, root1: TreeNode, root2: TreeNode) -> List[int]:
         values = []
         def collect(root):
@@ -21,19 +18,3 @@ class Solution:
         collect(root2)
         return sorted(values)
 
-#         def deep(root):
-#             if root.left is None and root.right is None:
-#                 self.ans.append(root.val)
-#                 return
-#             if root.left and root.right:
-#                 self.ans.append(root.val)
-            
-#             if root.left:
-#                 deep(root.left)
-#             if root.right:
-#                 deep(root.right)
-#         deep(root1)
-#         deep(root2)
-#         data = self.ans
-#         self.ans = []
-#         return sorted(data)
