@@ -8,8 +8,7 @@
 class Solution:
     def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
         result = []
-        dummy = ListNode(None)
-        current = dummy
+        current = dummy = ListNode(None)
         for each_list in lists:
             while each_list:
                 result.append(each_list.val)
