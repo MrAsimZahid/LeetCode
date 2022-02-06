@@ -14,7 +14,6 @@ class Solution:
                 repeat_count = 1
             else:
                 repeat_count += 1
-                
             if repeat_count <= 2:
                 nums[len_index] = current
                 len_index += 1
