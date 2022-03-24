@@ -1,6 +1,6 @@
 # mrasimzahid.github.io
 
-# Time: O(log(n))
+# Time: O(nlogn)
 # Space: O(1)
 
 class Solution:
